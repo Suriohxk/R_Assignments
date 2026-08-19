@@ -1,0 +1,14 @@
+Description:
+
+The Beijing air-quality dataset contained missing values (NA) concentrated mainly in
+pollutant columns such as PM2.5, PM10, SO2, and NO2, largely due to sensor downtime.
+Using `missing_summary()`, variables exceeding 20% missingness triggered warnings,
+flagging them for careful treatment rather than blind imputation. Numerical variables
+were cleaned in a single reusable for-loop using median imputation, which is robust to
+the outliers common in pollution readings. The categorical wind-direction variable (wd)
+was cleaned separately using a mode-based `calculate_mode()` function, since median
+imputation doesn't apply to categorical data. The `clean_variable()` function, wrapped
+in `tryCatch()`, ensured that invalid inputs (missing columns, categorical data passed
+as numeric, all-NA columns) produced informative messages instead of crashing the
+script. After cleaning, all selected variables reached zero missing values, confirmed
+both numerically (comparison table) and visually (bar chart).
