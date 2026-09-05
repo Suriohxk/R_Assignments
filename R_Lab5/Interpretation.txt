@@ -1,0 +1,13 @@
+Brief interpretation of the obtained results 
+
+
+
+Li has the highest degree, closeness and betweenness in the toy network. In other words, the toy network shows Li to be the most central node acting as the most important bridge between Amy, Ram, and Kate. 
+
+
+
+In the main network (with 52 nodes and 290 edges), the degree distribution is highly skewed  most individuals are connected to very few others while a small set (CA, CC, CD) dominates.  The hub score is the most valuable metric in determining the relative value of each page. CC is the highest hub, connected throughout outwards to many others. CA is the highest authority, the most referencedcentral individual. Community detection uncovers several additional clusters encircling the core core, which in turn have many one or two ties to a larger peripheral set.
+
+
+
+In general, however, the networks were hub and spoke in nature, where a few powerful individuals (CA, CC, CD) keep the structure together and the rest peripheral.
